@@ -15,14 +15,14 @@ import heroImg from "./images/hero.jpg";
 import authBg from "./images/hero.jpg";
 import techImg from "./images/course1.jpg";
 import courseImg from "./images/course2.jpg";
-import rightsImg from "./images/course3.jpg";
+import rightsImg from "./images/rights.jpg";
 import mentor1 from "./images/mentor1.jpg";
 import mentor2 from "./images/mentor2.jpg";
 import mentor3 from "./images/mentor3.jpg";
 // Donation/Project Images (New imports)
-import scholarshipImg from "./images/hero.jpg";
-import techHubImg from "./images/hero.jpg";
-import safetyGearImg from "./images/hero.jpg";
+import scholarshipImg from "./images/scholarship.jpg";
+import techHubImg from "./images/school.jpg"
+import safetyGearImg from "./images/food.jpg";
 
 // Leaflet Icon Fix
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
@@ -190,18 +190,18 @@ function App() {
         {/* COURSES SECTION (Detailed categorization) */}
         {(activeSection === "home" || activeSection === "courses") && (
           <section className="courses reveal-section">
-            <h2 className="animated-heading zoom">Upskilling Modules</h2>
+            <h2 className="animated-heading zoom">COURSES</h2>
             <div className="grid">
               
               {/* CARD 1: TECH SKILLS (Fee Based) */}
               <div className="card course-card labeled-card" data-label="Tech Skill">
                 <img src={techImg} alt="Tech" />
                 <div className="card-body">
-                  <h3>Technical Mastery</h3>
+                  <h3>Tech Skills</h3>
                   <select className="course-select">
-                    <option>AutoCAD Mastery — 1,500 KES</option>
+                    <option>frontend — 1,500 KES</option>
                     <option>React & Node.js — 4,000 KES</option>
-                    <option>Topographic Surveying — 2,000 KES</option>
+                    <option>dart and flutter — 2,000 KES</option>
                   </select>
                   <div className="progress-container"><div className="progress-bar" style={{width: '65%'}}></div></div>
                   <button className="btn-primary" onClick={() => setScholarPoints(prev => prev + 10)}>Enroll in Tech</button>
@@ -212,10 +212,10 @@ function App() {
               <div className="card course-card labeled-card" data-label="Soft Skill">
                 <img src={courseImg} alt="Soft Skills" />
                 <div className="card-body">
-                  <h3>Leadership & Comm</h3>
+                  <h3>soft skills</h3>
                   <select className="course-select">
                     <option>Public Speaking — FREE</option>
-                    <option>Project Management 101 — FREE</option>
+                    <option>Project Management 101 — 1500ksh</option>
                     <option>Emotional Intelligence — FREE</option>
                   </select>
                   <div className="progress-container"><div className="progress-bar" style={{width: '10%'}}></div></div>
@@ -317,15 +317,15 @@ function App() {
                  <img src={techHubImg} alt="Turkana Tech Hub" className="project-card-img" />
                  <div className="project-tag">Phase 1</div>
                  <h3>Turkana Tech Hub</h3>
-                 <p>Building a solar-powered workstation and high-speed satellite internet center for rural women developers.</p>
+                 <p>Buiilding a school to promote education in remote areas.</p>
                  <button className="btn-mpesa">Donate via M-PESA</button>
                </div>
                
                <div className="card donate-card project-card">
                  <img src={safetyGearImg} alt="Safety Gear Fund" className="project-card-img" />
                  <div className="project-tag">Critical</div>
-                 <h3>Safety Gear Fund</h3>
-                 <p>Providing standardized PPE, tailored high-visibility vests, and site boots for female field engineers.</p>
+                 <h3>Basic women needs</h3>
+                 <p>Help build and raise a woman of substance in this difficult and harsh world.</p>
                  <button className="btn-mpesa">Donate via M-PESA</button>
                </div>
             </div>
