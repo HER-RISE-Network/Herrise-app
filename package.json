@@ -1,0 +1,15 @@
+{
+  "name": "herrise-app",
+  "private": true,
+  "description": "Herrise - Node.js + MongoDB server & React + Tailwind client",
+  "scripts": {
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "start:server": "cd server && npm start",
+    "start:client": "cd client && npm run dev"
+  },
+  "dependencies": {
+    "firebase": "^12.10.0"
+  }
+}
